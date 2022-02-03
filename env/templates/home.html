@@ -1,0 +1,18 @@
+{%extends "page_border.html"%}
+{%block content%}
+<div class="jumbotron jumbotron-fluid">
+    <h1 class="display-4">Hello, Welcome!</h1>
+    <p class="lead">Set your Username.
+    <p>
+        <hr class="my-4">
+    <form action="{{url_for('result')}}">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input name="username" type="text" placeholder="Username">
+        </div>
+        <button type="submit">submit</button>
+    </form>
+    <hr class="my-4">
+    <p>Note: the username must contain a lowercase char, a Uppercase char and a digit.</p>
+</div>
+{%endblock%}
